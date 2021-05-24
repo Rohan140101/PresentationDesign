@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .logo img {
   padding: 0;
-  max-height: 26px;
+  max-height: 60px;
 }
 
 /*--------------------------------------------------------------
@@ -137,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  padding: 10px 10px 10px 20px;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: #004289;
@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .dropdown ul li {
-  min-width: 200px;
+  min-width: 150px;
 }
 
 .navbar .dropdown ul a {
@@ -1265,7 +1265,7 @@ section {
   padding: 12px 15px;
 }
 
-#contact .php-email-form button[type="submit"] {
+.form .php-email-form button[type="submit"] {
   background: #007bff;
   border: 0;
   border-radius: 20px;
@@ -1274,7 +1274,7 @@ section {
   transition: 0.3s;
 }
 
-#contact .php-email-form button[type="submit"]:hover {
+.form .php-email-form button[type="submit"]:hover {
   background: #0067d5;
   cursor: pointer;
 }
@@ -1446,3 +1446,81 @@ section {
 #footer .credits a:hover {
   color: #f1f7ff;
 }
+
+
+
+/*--------------------------------------------------------------
+# Custom CSS
+--------------------------------------------------------------*/
+.table-striped{
+  font-family: "Montserrat", sans-serif;
+}
+
+.table-striped td{
+  padding: 15px;
+}
+
+.thead-dark{
+  background-color: #004a99;
+  color: #f1f7ff;
+}
+
+.fa-check-circle{
+  color: #07de00;
+}
+
+.icon, .price, tr th{
+  text-align: center;
+}
+
+tr th{
+  font-size: 1.8rem;
+}
+
+.faq-section{
+  /*padding-bottom: 1.5%;*/
+  /*border: solid;*/
+  border-width: 1px;
+  margin-top: 8px;
+  /*border-color: #bdbdbd; */
+  font-family: "Montserrat"
+
+}
+
+.faq-question-1, .faq-question-2, .faq-question-3{
+  width: 100%;
+  text-align: left;
+  /*background-color: #004a99;
+  color: #f1f7ff;*/
+  background-color: #fff;
+  padding: 1%;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  position: relative;
+
+}
+
+.fa-angle-right{
+  right: 2%;
+  top: 30%;
+  position: absolute;
+  /*-moz-transition: all 2s linear;
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear;*/
+}
+
+
+
+.faq-answer-1, .faq-answer-2, .faq-answer-3{
+  display: none;
+  color: #004a99;
+  background-color: #f1f7ff; 
+  padding: 1%;
+  margin-bottom: 0px;
+  border-radius: 10px;
+}
+
+.faq-page{
+  margin-bottom: 5%;
+}
+

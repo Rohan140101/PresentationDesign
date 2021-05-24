@@ -243,3 +243,28 @@
   });
 
 })()
+
+//Custom JS
+
+
+var faqs = null;
+$.ajax({
+    'async': false,
+    'global': false,
+    'url': "../vendor/json/faqs.json",
+    'dataType': "json",
+    'success': function (data) {
+        faqs = data;
+    }
+});
+
+faqs.forEach(function(faq){
+  $('.faq-question-'+faq.id).click(function(){
+    $('.faq-answer-'+faq.id).slideToggle()
+  })
+})
+
+$("#login").onclick(function(){
+  // openLoginModal();
+  console.log("Ehmlo")
+})

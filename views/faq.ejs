@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+  <!-- ======= Header ======= -->
+  <%- include('partials/header') %>
+
+  <!-- #header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>FAQ</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Inner Page</li>
+          </ol>
+        </div>
+
+
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <section class="inner-page pt-4">
+      <div class="container faq-page">
+
+        <% faqs.forEach(function(faq){ %>
+        <div class="faq-section">
+        <button class="faq-question-<%=faq.id%>"><%= faq.question %><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        <p class="faq-answer-<%=faq.id%>"><%= faq.answer %></p>
+      </div>
+
+      <% }) %>
+        
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+    <%- include('partials/footer') %>
+
+\<!-- End Footer -->
+
+ 
+
+</html>
