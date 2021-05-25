@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
@@ -10,19 +11,35 @@ const app = express()
 app.set('view engine','ejs')
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static('assets'))
+const url = process.env.MONGOD_API
+mongoose.connect(url,{useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.set("useCreateIndex", true);
 
 const faqs = require(__dirname + "/assets/vendor/json/faqs.json")
 
-const UserSchema = new mongoose.Schema({
-	first_name:String,
-	last_name:String,
-	email:String,
-	
 
+const UserSchema = new mongoose.Schema({
+	email:String,
+	password:String
 })
 
+const User = new mongoose.model('User',UserSchema)
 
 app.get("/",function(req,res){
+	// console.log(url)
+	// newUser = new User({
+	// 	email:"rohan.kuckian",
+	// 	password:"1234567"
+	// })
+
+	// newUser.save(function(err){
+	// 	if(err){
+	// 		console.log(err)
+	// 	}
+	// 	else{
+	// 		console.log('Saved')
+	// 	}
+	// })
 	res.render("index")
 })
 

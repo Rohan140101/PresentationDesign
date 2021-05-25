@@ -31,7 +31,6 @@ function showLoginForm(){
 }
 
 function openLoginModal(){
-    console.log('Function call working')
     showLoginForm();
     setTimeout(function(){
         $('#loginModal').modal('show');    
@@ -70,5 +69,50 @@ function shakeModal(){
     }, 1000 ); 
 }
 
+var flag1 = 0
+var flag2 = 0
+function check(){
+    $(".fa").css("bottom","200px")
+    if($('#password_reg').val() == $('#password_confirmation').val()){
+        $('#message1').text("Passwords are Matching")
+        $('#message1').css('color','green')
+        // console.log('Match')
+        flag1 = 1
+    }
+    else{
+        $('#message1').text("Passwords are not Matching")
+        $('#message1').css('color','red')
+        // console.log('No Match')
+        flag1 = 0
+    }
 
-   
+    if($("#password_reg").val().length < 8){
+        $('#message2').text("Password Length should be more than 8 characters")
+        $('#message2').css('color','red')
+        flag2 = 0
+    }
+    else{
+        $('#message2').text("Password Length valid")
+        $('#message2').css('color','green')
+        flag2 = 1
+    }
+
+    if(flag1 == 1 && flag2 == 1){
+        $('.btn-register').attr("disabled",false)
+    } else {
+        $('.btn-register').attr("disabled",true)
+    }
+}
+
+
+$(".fa").click(function(){
+    if($('#password_reg').attr('type')=="text"){
+        $('#password_reg').attr("type","password")
+        $('#password_confirmation').attr("type","password")
+    } else {
+        $('#password_reg').attr("type","text")
+        $('#password_confirmation').attr("type","text")
+    }
+    $(this).toggleClass("fa-eye-slash")
+    $(this).toggleClass("fa-eye")
+})   

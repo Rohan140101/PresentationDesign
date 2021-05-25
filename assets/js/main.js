@@ -263,8 +263,3 @@ faqs.forEach(function(faq){
     $('.faq-answer-'+faq.id).slideToggle()
   })
 })
-
-$("#login").onclick(function(){
-  // openLoginModal();
-  console.log("Ehmlo")
-})
