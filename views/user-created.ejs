@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ======= Header ======= -->
+<%- include('partials/header') %>
+<link href="css/login-register.css" rel="stylesheet" />
+<!-- #header -->
+<div class="user-created">
+<div class="box">
+    <div class="content">
+        <div class="social">
+            <h2>Account Successfully Created</h2>
+                <i class="fas fa-check-circle fa-9x"></i>
+        </div>
+        <div>
+        </div>
+        <div class="division">
+        </div>
+        <div class="form loginBox">
+            <form method="POST" action="/login" accept-charset="UTF-8">
+                <input class="btn btn-default btn-user-created" type="button" value="Click here to Login" onclick="openLoginModal()">
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+<!-- ======= Footer ======= -->
+<%- include('partials/footer') %>
+<!-- End Footer -->
+<!-- Login-Register Modal with its css and scripts-->
+<%- include('partials/login-register.ejs') %>
+
+</html>

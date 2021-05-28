@@ -32,7 +32,7 @@
                                     <form method="POST" action="/login" accept-charset="UTF-8">
                                     <input id="email" class="form-control" type="text" placeholder="Email" name="email">
                                     <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                                    <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                                    <input class="btn btn-default btn-login" type="submit" value="Login">
                                     </form>
                                 </div>
                              </div>
@@ -40,14 +40,14 @@
                         <div class="box">
                             <div class="content registerBox" style="display:none;">
                              <div class="form">
-                                <form method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
-                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                <form method="POST" action="/register" accept-charset="UTF-8">
+                                <input id="email" class="form-control" type="text" placeholder="Email" name="email" autocomplete="off">
                                 <input id="password_reg" class="form-control" type="password" placeholder="Password" name="password" onkeyup='check();'>
                                 <span class="fa fa-eye"></span>
                                 <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation" onkeyup='check();'>
                                 <p id="message1"></p>
                                 <p id="message2"></p>
-                                <input class="btn btn-default btn-register" type="button" value="Create account" name="commit" disabled>
+                                <input class="btn btn-default btn-register" type="submit" value="Create account" name="commit" disabled>
                                 </form>
                                 </div>
                             </div>

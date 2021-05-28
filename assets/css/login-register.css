@@ -159,7 +159,7 @@
     text-align: center;
     width: 100%;
 }
-.login .btn-login, .registerBox .btn-register{
+.login .btn-login, .registerBox .btn-register, .btn-user-created{
     background-color: #00BBFF;
     border-color: #00BBFF;
     border-width: 0;
@@ -245,4 +245,21 @@
     position: absolute;
     right: 25px;
     bottom: 145px;
+}
+
+.fa-check-circle{
+    color: green;
+    /*margin: auto;*/
+    margin: 2% auto ;
+}
+
+.user-created{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.btn-user-created{
+    /*margin: auto;*/
+    width: auto;
 }

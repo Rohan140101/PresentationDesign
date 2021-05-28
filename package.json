@@ -18,9 +18,11 @@
   "homepage": "https://github.com/Rohan140101/PresentationDesign#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "express-session": "^1.17.2",
     "md5": "^2.3.0",
     "mongoose": "^5.12.11",
     "request": "^2.88.2"

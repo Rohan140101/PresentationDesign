@@ -72,7 +72,7 @@ function shakeModal(){
 var flag1 = 0
 var flag2 = 0
 function check(){
-    $(".fa").css("bottom","200px")
+    $(".fa").css("bottom","170px")
     if($('#password_reg').val() == $('#password_confirmation').val()){
         $('#message1').text("Passwords are Matching")
         $('#message1').css('color','green')
@@ -86,14 +86,10 @@ function check(){
         flag1 = 0
     }
 
-    if($("#password_reg").val().length < 8){
-        $('#message2').text("Password Length should be more than 8 characters")
-        $('#message2').css('color','red')
+    if($("#password_reg").val().length < 1){
         flag2 = 0
     }
     else{
-        $('#message2').text("Password Length valid")
-        $('#message2').css('color','green')
         flag2 = 1
     }
 
@@ -116,3 +112,7 @@ $(".fa").click(function(){
     $(this).toggleClass("fa-eye-slash")
     $(this).toggleClass("fa-eye")
 })   
+
+function logout(){
+    window.location = "/logout"
+}
