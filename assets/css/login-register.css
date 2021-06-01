@@ -238,13 +238,14 @@
     margin: 0 0 10px 0;
 }
 
-.fa{
+.fa-eye{
     float: right;
     z-index: 1;
     display: inline-block;
     position: absolute;
     right: 25px;
-    bottom: 145px;
+    /*bottom: 145px;*/
+    top: 210px;
 }
 
 .fa-check-circle{
@@ -262,4 +263,13 @@
 .btn-user-created{
     /*margin: auto;*/
     width: auto;
+}
+
+#contactModal{
+    text-align: center;
+}
+
+.fa-thumbs-up{
+    color: #FFD700;
+    margin: 3% 0 6%;
 }

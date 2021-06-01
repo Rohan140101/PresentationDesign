@@ -32,8 +32,8 @@
 
         <% faqs.forEach(function(faq){ %>
         <div class="faq-section">
-        <button class="faq-question-<%=faq.id%>"><%= faq.question %><i class="fa fa-angle-right" aria-hidden="true"></i></button>
-        <p class="faq-answer-<%=faq.id%>"><%= faq.answer %></p>
+        <button class="faq-question-<%=faq.id%> faq-ques"><%= faq.question %><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        <p class="faq-answer-<%=faq.id%> faq-ans"><%= faq.answer %></p>
       </div>
 
       <% }) %>
@@ -47,7 +47,8 @@
     <%- include('partials/footer') %>
 
 \<!-- End Footer -->
-
+  <!-- Login-Register Modal with its css and scripts-->
+  <%- include('partials/login-register.ejs') %>
  
 
 </html>

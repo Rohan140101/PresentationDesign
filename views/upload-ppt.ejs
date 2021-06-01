@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ======= Header ======= -->
+<%- include('partials/header') %>
+<!-- #header -->
+<main id="main">
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Upload PPT</h2>
+            </div>
+        </div>
+    </section>
+
+    <head>
+        <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+        <link href='' rel='stylesheet'>
+        <style>
+        body {
+            /*background-color: #eee*/
+        }
+
+        .form-control:focus {
+            color: #495057;
+            background-color: #fff;
+            border-color: #80bdff;
+            outline: 0;
+            box-shadow: 0 0 0 0rem rgba(0, 123, 255, .25)
+        }
+
+        .btn-secondary:focus {
+            box-shadow: 0 0 0 0rem rgba(108, 117, 125, .5)
+        }
+
+        .close:focus {
+            box-shadow: 0 0 0 0rem rgba(108, 117, 125, .5)
+        }
+
+        .mt-200 {
+            margin-top: 200px
+        }
+        </style>
+    </head>
+    <div class='snippet-body'>
+        <link href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard_theme_arrows.min.css" rel="stylesheet" type="text/css" />
+        <div class="container">
+            <div class="step-div">
+                <h3>Below are the steps to upload Raw PPT and get back the Modified One</h3>
+                <% steps.forEach(function(step){ %>
+                <div class="step">
+                    <h4>Step
+                        <%= step.no %> -
+                        <%= step.title %>
+                    </h4>
+                    <p>
+                        <%= step.description %>
+                    </p>
+                </div>
+                <% }) %>
+            </div>
+            <div class="row d-flex justify-content-center mt-200">
+                <button type="button" class="btn btn-primary uploadppt" data-toggle="modal" data-target="#exampleModalScrollable">Click Here to Upload PPT</button>
+            </div> <!-- Modal -->
+            <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Please Complete the Following Steps</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="smartwizard">
+                                <ul>
+                                    <li><a href="#step-1">Step 1<br /><small>Upload Presentation</small></a></li>
+                                    <li><a href="#step-2">Step 2<br /><small>Specify Modifications</small></a></li>
+                                </ul>
+                                <div class="mt-4">
+                                    <div id="step-1">
+                                        <div class="row">
+                                            <span>Type Of Presentation</span>
+                                            <label class="radioLabel"><input type="radio" class="form-check-input" name="typeofpresentation" value="pptx">PPTX</label>
+                                            <label class="radioLabel"><input type="radio" class="form-check-input" name="typeofpresentation" value="googleSlides">Google Slides</label>
+                                            <label class="radioLabel"><input type="radio" class="form-check-input" name="typeofpresentation" value="drawing">Drawing</label>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-md-12"> <input type="text" class="form-control gslink" placeholder="Google Slides Link" disabled=""> </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-md-12"> <input type="file" class="form-control-file fileupload" placeholder="File" disabled> </div>
+                                        </div>
+                                    </div>
+                                    <div id="step-2">
+                                        <div class="col-md-12"> <span>Type of Modification</span>
+                                            <!-- <select class="form-control ">
+                                                <option>Restructure</option>
+                                                <option>Redraw</option>
+                                                <option>Fit Out</option>
+                                                <option>Master Template</option>
+                                                <option>Infographics</option>
+                                                <option>Icons</option>
+                                            </select> -->
+                                            <div class="row">
+                                                <label class="radioLabel"><input type="radio" class="form-check-input" name="modification" value="restructure"><span class="modify-head">Restructure</span><span class="modify-desc">- Complete makeover of presentation</span></label>
+                                                <label class="radioLabel"><input type="radio" class="form-check-input" name="modification" value="redraw"><span class="modify-head">Redraw</span><span class="modify-desc">- Turn sketch into Proper Presentation</span></label>
+                                                <label class="radioLabel"><input type="radio" class="form-check-input" name="modification" value="fitOut"><span class="modify-head">Fit Out</span><span class="modify-desc">- Adjust Alignment of Presentation</span></label>
+                                                <label class="radioLabel"><input type="radio" class="form-check-input" name="modification" value="masterTemplate"><span class="modify-head">Master Template</span><span class="modify-desc">- Update Old Template</span></label>
+                                                <label class="radioLabel"><input type="radio" class="form-check-input" name="modification" value="infographics"><span class="modify-head">Infographics</span><span class="modify-desc">- Add Images,Charts, Text Decoration</span></label>
+                                                <label class="radioLabel"><input type="radio" class="form-check-input" name="modification" value="icons"><span class="modify-head">Icons</span><span class="modify-desc">- Add Unique and Customized Icons</span></label>
+                                            </div>
+                                        </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-12"><span>Specify Modifications in Detail</span>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-6"><span>Required Time.</span>
+                                            <select class="form-select">
+                                                <option>6 Hrs</option>
+                                                <option>12 Hrs</option>
+                                                <option>24 Hrs</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <center><button type="button" class="btn btn-danger">Submit Presentation</button>
+                                            </center><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</html>
+</div>
+</div>
+</section><!-- End Breadcrumbs Section -->
+<section class="inner-page pt-4">
+    <div class="container faq-page">
+    </div>
+</section>
+</main>
+<!-- ======= Footer ======= -->
+<%- include('partials/footer') %>
+\
+<!-- End Footer -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/jquery.smartWizard.min.js"></script>
+<script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+<script type='text/javascript'>
+$(document).ready(function() {
+
+    $('#smartwizard').smartWizard({
+        selected: 0,
+        theme: 'arrows',
+        autoAdjustHeight: true,
+        transitionEffect: 'fade',
+        showStepURLhash: false,
+
+    });
+
+});
+</script>
+
+</html>

@@ -2,17 +2,53 @@
 [
 	{
 		"id":1,
-		"question":"How Much time will it take to get back the modified PPT",
-		"answer":"It will take upto 24 hours to get back your modified PPT"
+		"question":"How Much time will it take to get back the modified PPT?",
+		"answer":"Our standard turnaround time for presentation development is 24 hours. The collaborative range of nature of our presentation design process (i.e. asking for and incorporating your feedback), our turnaround time also relies on your responsiveness and availability."
 	},
 	{
 		"id":2,
-		"question":"How Much time will it take to get back the modified PPT",
-		"answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inc idid unt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		"question":"What are the final files that I will receive?",
+		"answer":"All of our final PowerPoint deliverables are shared with you in it's native, editable file format.We are also able to provide PDF or video version of your presentation if you would like."
 	},
 	{
 		"id":3,
-		"question":"How Much time will it take to get back the modified PPT",
-		"answer":"It will take upto 24 hours to get back your modified PPT"
+		"question":"Aside from PowerPoint do you work with Google Slides?Keynote?",
+		"answer":"Yes! While we prefer designing PowerPoint presentations due to it's robust features that let us create advanced designs,we've custom presentation designs in Google Slides and Keynote at our client's request."
+	},
+	{
+		"id":4,
+		"question":"Will we run into issues if we use Mac and/or windows?",
+		"answer":"There are some differences in functionality between PowerPoint for Mac and PowerPoint for Windows—but these are not for your concern! We use both Mac and Windows computers at Stinson, so we're able to ensure cross-device compatibility with every PowerPoint presentation we design. During our initial call with you, we'll ask you for these tech specs so that we know to bear them in mind when working on your project."
+	},
+	{
+		"id":5,
+		"question":"Does it matter which version of the PowerPoint we use?",
+		"answer":" Yes; the latest versions of PowerPoint have new functions and features that earlier versions of PowerPoint cannot load. We'll take note of your tech setup to ensure that our presentations for you run as intended."
+	},
+	{
+		"id":6,
+		"question":"How are you able to design  a company's brand?",
+		"answer":"If you have any brand guidelines, we ask you to provide them early on in the process so that we can familiarize ourselves not only with your logos, colors, and fonts, but the overarching brand tone. Our collaborative process includes rounds of revision for you to provide your feedback on the presentation design."
+	},
+	{
+		"id":7,
+		"question":"How secure is my data?",
+		"answer":"We take data security seriously. We enforce numerous internal policies and procedures to ensure that Stinson continues to meet compliance and security standards for data protection, including multi-factor authentication for all company accounts and access restrictions."
+	},
+	{
+		"id":8,
+		"question":"We have highly sensitive information.Will my data remain confidential?",
+		"answer":"Absolutely—we respect the proprietary nature of businesses, and enforce a strict confidentiality policy company-wide. From the first point of contact with you, we assume a non-disclosure agreement (NDA); we are happy to sign your company's NDA as well."
+	},
+	{
+		"id":9,
+		"question":"How does partnering with a linktolearn work ?",
+		"answer":" Once you upload your ppt.We will contact you and tell you that your project has been approved. After sometime we will send you a few templates to select. Once you select we start designing the draft, you can view it and if any changes are required you can comment or contact us, then we work on the changes. Now if you are satisfied with ppt,you can approve it and download it."
+	},
+	{
+		"id":10,
+		"question":"What time are we working?",
+		"answer":"We are open from Monday - Friday.We work for 20 hours per day."
 	}
+
 ]

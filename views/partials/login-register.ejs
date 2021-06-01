@@ -41,7 +41,7 @@
                             <div class="content registerBox" style="display:none;">
                              <div class="form">
                                 <form method="POST" action="/register" accept-charset="UTF-8">
-                                <input id="email" class="form-control" type="text" placeholder="Email" name="email" autocomplete="off">
+                                <input id="email-reg" class="form-control" type="text" placeholder="Email" name="email" autocomplete="off">
                                 <input id="password_reg" class="form-control" type="password" placeholder="Password" name="password" onkeyup='check();'>
                                 <span class="fa fa-eye"></span>
                                 <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation" onkeyup='check();'>
@@ -67,5 +67,26 @@
     		      </div>
 		      </div>
 		  </div>
+
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="closeContact" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2>Your Query has been Submitted</h2>
+        <i class="fa fa-thumbs-up fa-8x" aria-hidden="true"></i>
+        <h4>Our Team will try to respond to you as quickly as possible</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary closeContact" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="js/login-register.js" type="text/javascript"></script>

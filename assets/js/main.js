@@ -4,6 +4,8 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+var serverUrl = "http://localhost:3000/";
+
 (function() {
   "use strict";
 
@@ -262,4 +264,42 @@ faqs.forEach(function(faq){
   $('.faq-question-'+faq.id).click(function(){
     $('.faq-answer-'+faq.id).slideToggle()
   })
+})
+
+$("#btnmsg").click(function(){
+  // let name = 
+  // console.log($("#name").val())
+  $.ajax({
+    url:serverUrl+'contact',
+    type:"POST",
+    data:{
+      name:$("#name").val(),
+      email:$("#email").val(),
+      subject:$("#subject").val(),
+      message:$("#message").val()
+    },
+    success:function(response){
+      if(response.status=="submitted"){
+        $("#contactModal").modal("show")
+        $("#name").val("")
+        $("#email").val("") 
+        $("#subject").val("") 
+        $("#message").val("") 
+      }
+    }
+
+  })
+})
+
+$(".form-check-input").change(function(){
+  
+  if($(this).val() == "googleSlides"){
+    // console.log($(this).val())
+    $(".gslink").attr("disabled",false)
+    $(".fileupload").attr("disabled",true)
+  }
+  else{
+    $(".gslink").attr("disabled",true)
+    $(".fileupload").attr("disabled",false)
+  }
 })

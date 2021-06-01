@@ -1265,7 +1265,7 @@ section {
   padding: 12px 15px;
 }
 
-.form .php-email-form button[type="submit"] {
+.form .php-email-form button[type="button"] {
   background: #007bff;
   border: 0;
   border-radius: 20px;
@@ -1274,7 +1274,7 @@ section {
   transition: 0.3s;
 }
 
-.form .php-email-form button[type="submit"]:hover {
+.form .php-email-form button[type="button"]:hover {
   background: #0067d5;
   cursor: pointer;
 }
@@ -1487,7 +1487,7 @@ tr th{
 
 }
 
-.faq-question-1, .faq-question-2, .faq-question-3{
+.faq-ques{
   width: 100%;
   text-align: left;
   /*background-color: #004a99;
@@ -1509,9 +1509,7 @@ tr th{
     transition: all 2s linear;*/
 }
 
-
-
-.faq-answer-1, .faq-answer-2, .faq-answer-3{
+.faq-ans{
   display: none;
   color: #004a99;
   background-color: #f1f7ff; 
@@ -1524,3 +1522,65 @@ tr th{
   margin-bottom: 5%;
 }
 
+.snippet-body{
+  margin: auto;
+  /*right: 10%;*/
+  position: relative;
+}
+
+.uploadppt{
+  width: auto;
+/*margin-left: 50%;*/
+text-align: center;
+}
+/*.modal-content{
+  width: 50%;
+}*/
+
+.step-div{
+  text-align: left;
+  font-family: "Montserrat";
+}
+
+.step{
+  border: 1px solid;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.step h4{
+  border-bottom: 1px solid;
+  padding-bottom: 0.5rem;
+}
+
+.step p {
+  margin-bottom: 0.2rem;
+}
+
+.modal-dialog{
+  max-width: 40%;
+}
+
+.form-check-input{
+  /*position: relative;*/
+  left: 5%;
+}
+
+.radioLabel{
+  margin-left: 4%;
+  display: inline;
+}
+
+.row span, .col-md-12 span{
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+
+span[class="modify-head"]{
+  font-weight: 600;
+}
+
+span[class="modify-desc"]{
+  font-weight: 300;
+}

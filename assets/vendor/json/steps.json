@@ -1,0 +1,27 @@
+[
+	{
+		"no":1,
+		"title":"Upload PPT",
+		"description":"Here you will be asked to upload your content, either as a .PPTX file, Google Slides or even just a drawing."
+	},
+	{
+		"no":2,
+		"title":"Specify Modifications",
+		"description":" You will be able to choose your design style, or upload your own brand guidelines, and then select your desired turn- around time, up to 24-hours."
+	},
+	{
+		"no":3,
+		"title":"Confirmation Of Received PPT",
+		"description":" Within a few hours, you will receive an email from one of our project managers who will let you know whether your order has been approved, or if we have any last-minute questions. We will send over a few slides so you can pick which one you like best, before we proceed."
+	},
+	{
+		"no":4,
+		"title":"Verify Draft",
+		"description":" Well within your selected turn-around-time, you will be notified that your draft is ready to be viewed. You will be able to view all slides right from within our platform, as well as adding feedback by selecting areas of the slide and adding comments."
+	},
+	{
+		"no":5,
+		"title":"Download PPT",
+		"description":" Once you are happy with the slides, you can approve the order and download the full PPTX file. We will then go ahead and charge your card for the original quoted price unless you’ve agreed on a new price with the project manager."
+	}
+]
